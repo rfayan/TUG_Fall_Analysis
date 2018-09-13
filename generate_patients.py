@@ -10,6 +10,9 @@ class Pacient:
         fft: array of integers containing the Fourier transform of 'data'
         data_windows: list of float arrays, each containing a window 'data'
         fft_windows: list of integer arrays, each containing a window within 'fft'
+        features: array of floating point values, each associated to a specific feature
+                  [patient_id, pse, psp1, psp2, psp3, pspf1, pspf2, pspf3, wpsp, cpt]
+        tugs: list of 9 floating point lists, one for each TUG test, each one with 2 values: beginning and end
     """
 
     def __init__(self, data, window_size, window_slide, features, tugs):
@@ -45,8 +48,8 @@ class Pacient:
 
 if __name__ == "__main__":
     dataset = np.load('data_fusion.npy')
-    feat_matrix = np.load('featuresAcc.npy')  # [n_patient][pse, psp1, psp2, psp3, pspf1, pspf2, pspf3, wpsp, cpt]
-    tugs_list = np.load('segmented_tugs.npy')  # [n_patient][n_TUG][begin, end]
+    feat_matrix = np.load('featuresAcc.npy')
+    tugs_list = np.load('segmented_tugs.npy')
     print('Numero de pacientes: ' + str(len(dataset)))
     patients = []
 

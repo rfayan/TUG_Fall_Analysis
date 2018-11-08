@@ -1,0 +1,11 @@
+,Signal,Method,Features,Components,AUC_Score,F1_Score,Average_Precision,Balanced_Accuracy
+GradBoosting_TUGs_250_64,TUGs,GradientBoosting,250,64,0.892,0.889,0.883,0.9
+SVM_TUGs_500_32,TUGs,SVM,500,32,0.862,0.833,0.596,0.923
+AdaBoosting_TUGs_128_32,TUGs,AdaBoosting,128,32,0.831,0.727,0.805,0.823
+SVM_TUGs_128_64,TUGs,SVM,128,64,0.8,0.667,0.633,0.808
+AdaBoosting_TUGs_250_64,TUGs,AdaBoosting,250,64,0.785,0.667,0.716,0.762
+GradBoosting_272_16,Whole,GradientBoosting,272,16,0.768,0.643,0.526,0.789
+AdaBoosting_TUGs_128_16,TUGs,AdaBoosting,128,16,0.754,0.625,0.491,0.769
+GradBoosting_272_32,Whole,GradientBoosting,272,32,0.743,0.581,0.553,0.736
+AdaBoosting_272_16,Whole,AdaBoosting,272,16,0.739,0.571,0.524,0.721
+SVM_TUGs_128_16,TUGs,SVM,128,16,0.738,0.625,0.566,0.769
